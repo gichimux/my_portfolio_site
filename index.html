@@ -68,7 +68,7 @@
 					<div class="navbar-header">
 						<!-- Mobile Toggle Menu Button -->
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-						<a class="navbar-brand" href="#" ><span id="logo">>_</span></a> 
+						<a class="navbar-brand" href="#" ><span id="logo"> %</span></a> 
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -412,8 +412,9 @@
 		<div class="overlay"></div>
 		<div class="container">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<p>Want my services? reach out via email: gichimu.dev@gmail.com </p>
-					<button href="#" class="btn btn-primary ">Copy email</button>
+					<p>Lets work together, reach out via email: <span value="gichimu.dev@gmail.com" id="myEmail">gichimu.dev@gmail.com</span> </p>
+					<button href="#" class="btn btn-primary" data-toggle="tooltip" title="copied to clipboard" onclick="copy_script()">Copy email</button>
+					
 				</div>
 
 		</div>
@@ -437,7 +438,17 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
-	
+	<script>
+	function copy_script() {
+  var copyText = document.getElementById("myEmail");
+  document.getElementById("alert").style.display = all;
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  
+
+}
+</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
