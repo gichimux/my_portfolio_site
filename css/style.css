@@ -1833,5 +1833,28 @@ figure.effect-bubba:hover p {
   visibility: visible;
   opacity: 1;
 }
+#proj-btn{
+  border: 2px solid green;
+  border-radius: 0;
+  background-color: #fff;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom:-10px;
+}
+#proj-card {
+  /* Add shadows to create the #proj-card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
 
+/* On mouse-over, add a deeper shadow */
+#proj-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#proj-cont{
+  padding-top: 5px;
+
+}
 /*# sourceMappingURL=style.css.map */
