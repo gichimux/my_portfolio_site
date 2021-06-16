@@ -84,6 +84,15 @@ font-family: "Roboto Mono", monospace;
   color: #fff;
   background: #f0ad4e;
 }
+.navbar-custom{
+  background-color: #681D9E !important;
+
+}
+
+.navbar-custom .navbar-brand{
+  color: #f0ad4e !important;
+  margin: 5px;
+}
 
 #fh5co-header #navbar .navbar-right {
   margin-right: 0;
@@ -92,7 +101,7 @@ font-family: "Roboto Mono", monospace;
 }
 #fh5co-header #navbar li a {
   font-family: "Roboto Mono", monospace;
-  color: rgba(0, 0, 0, 0.6);
+  color: #fff;
   position: relative;
   font-size: 16px;
   font-weight: 400;
